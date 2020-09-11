@@ -1,0 +1,102 @@
+*,*:before,*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wrapper{
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #531405;
+}
+
+.header__body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+}
+
+.header__burger {
+    display: none;
+}
+.header__menu {
+
+}
+
+@media (max-width: 767px)
+{
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+    .header__burger:before {
+
+    }
+    .header__burger:after{
+        
+    }
+}
+
+.header__list {
+    display: flex;
+}
+.header__list li {
+    list-style: none;
+    margin: 0px 0px 0px 60px;
+}
+.header__link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header__img {
+    
+    background-image: url("img/Albion-Online_Queen_Art.jpg");
+}
+
+.content {
+    padding: 80px 0px 0px 0px;
+}
+
+.content__text {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.content__text p{
+    margin: 0px 0px 20px 0px;
+}
