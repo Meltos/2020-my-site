@@ -172,6 +172,8 @@ body {
 .content__text {
     font-size: 18px;
     line-height: 25px;
+    background-color: #e7e7e7;
+    padding: 16px;
 }
 
 .content__text p{
@@ -183,4 +185,40 @@ body {
     .content {
         padding: 50px 0px 0px 0px;
     }
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.image-headline {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.image-headline h2 {
+    left: 30px;
+    bottom: 20px;
+    position: absolute;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+@media (max-width: 490px)
+{
+    .image-headline h2
+    {
+        left: 20px;
+        bottom: 15px;
+        font-size: 30px;
+    }
+}
+
+.content__block2 {
+    display: flex;
+    flex-wrap: wrap;
 }
