@@ -11,7 +11,7 @@ html, body{
 }
 
 .wrapper{
-
+    
 }
 
 body {
@@ -241,7 +241,6 @@ img {
 }
 
 .two-block__item {
-    background-color: hsla(50,8%,72%,.5);
     padding: 15px;
 }
 
@@ -258,7 +257,10 @@ img {
 }
 
 .columns {
-    padding: 16px;
+    position: relative;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    float: left;
 }
 
 .text-uppercase {
@@ -267,4 +269,30 @@ img {
 
 .margin-top__h3 {
     margin-bottom: 5px;
+}
+
+.lore-item .row {
+    margin: 0 -8px;
+    background: hsla(50,8%,72%,.5);
+    height: 100%;
+}
+
+.row .row {
+    margin: 0 -.9375rem;
+    max-width: none;
+    width: auto;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.full {
+    width: 100%;
+}
+
+.row__bg {
+    background: hsla(50,8%,72%,.5);
+    height: 100%;
 }
